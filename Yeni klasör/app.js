@@ -5,6 +5,32 @@ var images = [
   { id: "semicenk", audio: "audio/ab.mp3" },
   { id: "gunes", audio: "audio/1.mp3" },
   { id: "masterPlay", audio: "audio/4.mp3" },
+  { id: "6",audio:"audio/sezenfiruze.mp3"},
+  { id: "7",audio:"audio/EdisMartılar.mp3"},
+  { id: "8",audio:"audio/EmirCanIgrekKor.mp3"},
+  { id: "9",audio:"audio/FireOnFire.mp3"},
+  { id: "10",audio:"audio/melikenasir.mp3"},
+  { id: "11",audio:"audio/muslumgtutamiyorumzamani.mp3"},
+  { id: "12",audio:"audio/NilüferSonArzum.mp3"},
+  { id: "13",audio:"audio/NewEmpireAlittleBraver.mp3"},
+  { id: "14",audio:"audio/SerdarOrtaçDansöz.mp3"},
+  { id: "15",audio:"audio/JamesArthur.mp3"},
+  { id: "16",audio:"audio/gazapizmolurmu.mp3"},
+  { id: "17",audio:"audio/kahramandenizgarezivar.mp3"},
+  { id: "18",audio:"audio/CanBonomoTastamam.mp3"},
+  { id: "19",audio:"audio/coldplayyellow.mp3"},
+  { id: "20", audio: "audio/adamlar.mp3" },
+  { id: "21", audio: "audip/HakanPekerKaram.mp3" },
+  { id: "22", audio: "audio/ImagineDragonsBones.mp3" },
+  { id: "23", audio: "audio/ImagineDragonsThunder.mp3" },
+  { id: "24", audio: "audio/yalinkisen.mp3" },
+  { id: "25", audio: "audio/KenandoguluTencereKapak.mp3" },
+  { id: "26", audio: "audio/lewiscapaldibeforeyougo.mp3" },
+  { id: "27", audio: "audio/SeksendörHayirOlamaz.mp3" },
+  { id: "28", audio: "audio/tarkan-kuzukuzu.mp3" },
+  { id: "29", audio: "audio/yalincumhuriyet.mp3" },
+  { id: "30", audio: "audio/yasarkumralım.mp3" }
+
 ];
 
 var audio = new Audio();
