@@ -32,7 +32,6 @@ var images = [
   { id: "30", audio: "audio/yasarkumralım.mp3" }
 
 ];
-
 var audio = new Audio();
 var isPlaying = false;
 
@@ -54,7 +53,6 @@ function toggleAudio(audioSrc) {
     isPlaying = true;
   }
 }
-
 
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
