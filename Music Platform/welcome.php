@@ -71,7 +71,51 @@
                 <div class="search">
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="Müzik ara...">
-                </div>
+                    <div class="search_result"></div>
+                      <!-- <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                          </div>
+                        </a> -->
+                        <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                          </div>
+                        </a> 
+                        <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                          </div>
+                        </a> 
+                        <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                          </div>
+                        </a> 
+                        <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                          </div>
+                        </a> 
+                        <a href= "#" class="card">
+                         <img src="img/1.jpg" alt=""></a>
+                         <div class="context">
+                          <var div = document.createElement(images)></var>
+
+                           </div>
+                        </a> 
+
+                 </div>
                 <div class="user">
                   <img src="img/kullanıcı.png" alt="">
                   <a href="logout.php" title="Logout"><i class="bi bi-box-arrow-right"></i> </a>

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 *{
@@ -598,6 +597,45 @@ header .song_side nav .search input{
     color: rgb(39, 15, 15);
     font-size: 12px;
 }
+header .song_side nav .search .search_result {
+   position: absolute;
+   width: 100% ;
+   height: 200px;
+   border: 1px solid #fff;
+   margin-top: 10px;
+   border-radius:10px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction:column;
+   overflow: auto;
+}
+header .song_side nav .search .search_result::-webkit-scrollbar {
+   display: none;
+ 
+ }
+header .song_side nav .search .search_result.card {
+   width: 100%;
+   min-height:45px;
+   border: 1px solif #fff;
+   display: flex;
+   align-items: center;
+   padding: 0px 5px;
+ }
+ header .song_side nav .search .search_result.card img {
+    width: 35px;
+    height:35px;
+    border-radius:5px;
+  }
+  header .song_side nav .search .search_result.card .content{
+    width: 80%;
+    height:100%;
+    border:1px solid #fff;
+    padding: 0;
+    font-size:13px ;
+    font-weight:600;
+    color:#fff;
+  }
 
 
 header .song_side nav .search .search_result{
@@ -622,7 +660,7 @@ header .song_side nav .search .search_result .card{
     /*border: 1px solid white;*/
     display: flex;
     align-items: center;
-    padding: 0px 5px;
+    padding: 1x 5px;
     text-decoration: none;
     background: rgb(94, 47, 47);
     margin-bottom: 5px;
@@ -650,7 +688,7 @@ header .song_side nav .search .search_result .card .content{
     flex-direction: column;
 }
 
-header .song_side nav .search .search_result .card .content .subtitle{
+header .song_side nav .search .search_result .card .content .document{
     font-size: 11px;
     color:#a4a8b4;
     font-weight: 500;
