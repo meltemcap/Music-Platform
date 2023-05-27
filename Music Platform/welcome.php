@@ -71,6 +71,7 @@
                 <div class="search">
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="Müzik ara...">
+<<<<<<< HEAD
                     <div class="search_result"></div>
                       <!-- <a href= "#" class="card">
                          <img src="img/1.jpg" alt=""></a>
@@ -116,6 +117,9 @@
                         </a> 
 
                  </div>
+=======
+                </div>
+>>>>>>> e4c0fefe8da68b695053fb71af06727a1f8bcbb0
                 <div class="user">
                   <img src="img/kullanıcı.png" alt="">
                   <a href="logout.php" title="Logout"><i class="bi bi-box-arrow-right"></i> </a>

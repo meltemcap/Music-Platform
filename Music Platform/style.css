@@ -660,7 +660,11 @@ header .song_side nav .search .search_result .card{
     /*border: 1px solid white;*/
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     padding: 1x 5px;
+=======
+    padding: 0px 5px;
+>>>>>>> e4c0fefe8da68b695053fb71af06727a1f8bcbb0
     text-decoration: none;
     background: rgb(94, 47, 47);
     margin-bottom: 5px;
@@ -688,7 +692,11 @@ header .song_side nav .search .search_result .card .content{
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 header .song_side nav .search .search_result .card .content .document{
+=======
+header .song_side nav .search .search_result .card .content .subtitle{
+>>>>>>> e4c0fefe8da68b695053fb71af06727a1f8bcbb0
     font-size: 11px;
     color:#a4a8b4;
     font-weight: 500;
