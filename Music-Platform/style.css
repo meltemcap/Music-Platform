@@ -30,21 +30,21 @@ header .menu_side, .song_side {
     width: 25%;
     height: 90%;
     /* border: 1px solid #fff; */
-    background-color: #111727;
-    box-shadow: 5px 0px 2px #090f1f;
+    background-color: #230505;
+    box-shadow: 5px 0px 2px #260808;
     color: #fff;
 }
 
 header .song_side {
     width: 75%;
-    background: #0b1320;
+    background: #220505;
 }
 
 header .master_play {
     width: 100%;
     height: 10%;
-    background: #111727;
-    box-shadow: 0px 3px 8px #090f1f;
+    background: #3b0b0b;
+    box-shadow: 0px 3px 8px #250707;
 }
 
 header .menu_side h1 {
@@ -422,7 +422,7 @@ header .master_play .vol input{
     position: absolute;
     width: 100% ;
     height: 200px;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     margin-top: 10px;
     border-radius:10px;
     display: flex;
@@ -435,7 +435,7 @@ header .master_play .vol input{
     display: none;
   
   }
-  header .song_side nav .search .search_result.card {
+  header .song_side nav .search .search_result .card {
     width: 100%;
     min-height:45px;
     /*border: 1px solid #fff;*/
@@ -446,12 +446,12 @@ header .master_play .vol input{
     background: rgb(184,184,184,.1);
     margin-bottom: 5px;
   }
-  header .song_side nav .search .search_result.card img {
+  header .song_side nav .search .search_result .card img {
      width: 35px;
      height:35px;
      border-radius:5px;
    }
-   header .song_side nav .search .search_result.card .content{
+   header .song_side nav .search .search_result .card .content{
     width: 80%;
     height:100%;
     /*border:1px solid #fff;*/
@@ -465,7 +465,7 @@ header .master_play .vol input{
     flex-direction: column;
 
   }
-  header .song_side nav .search .search_result.card .content.subtitle{
+  header .song_side nav .search .search_result.card .content .subtitle{
     
     font-size:11px ;
     color:#a4a8b4;

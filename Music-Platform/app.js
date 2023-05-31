@@ -1,4 +1,4 @@
-const music = new Audio('2.mp3');
+const music = new Audio('audio/9.mp3');
 
 // create Array 
 
@@ -9,12 +9,12 @@ const songs = [
         <div class="subtitle">GÜNEŞ</div>`,
         poster: "img/indir.jpeg",
     },
-    {
-        id:'2',
-        songName:` FIRTINADAYIM <br>
-        <div class="subtitle">Mabel Matiz</div>`,
-        poster: "img/4.jpeg",
-    },
+    //{
+       // id:'2',
+        //songName:` FIRTINADAYIM <br>
+       // <div class="subtitle">Mabel Matiz</div>`,
+       // poster: "img/4.jpeg",
+    //},
     // all object type 
     {
         id:"3",
@@ -174,10 +174,25 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 });
  
-  //search data start
-
+  //search data start //searchbar kısmı
   let search_result=document.getElementsByClassName('search_result')[0];
+  search_result.addEventListener('click',()=>{ //bunu kaldırınca masterplaydeki şarkı durmadan seçtiğim şarkı çalıyo
+    
+   if (music.paused || music.currentTime <=0) {
+     music.play();
+     masterPlay.classList.remove('bi-play-fill');
+     masterPlay.classList.add('bi-pause-fill');
+     wave.classList.add('active2');
+       
+    } else {
+       music.pause();
+       masterPlay.classList.add('bi-play-fill');
+       masterPlay.classList.remove('bi-pause-fill');
+       wave.classList.remove('active2');
+    }
+} )
 
+let masterplayMusic = null;
   songs.forEach(element => {
     const { id, songName, poster}=element;
     let card = document.createElement('a');
@@ -190,9 +205,28 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
     </div>
     `;
     search_result.appendChild(card);
+    card.addEventListener('click', () => { //seçilen cardın çalışması
+        if (masterplayMusic && !masterplayMusic.paused) { //masterplayde şarkı çalıyosa dursun seçtiğim şarkı çalsın
+            masterplayMusic.pause();
+          }  
+          const music = new Audio(`audio/${id}.mp3`);
+          music.play();
+          masterplayMusic = music;
+          const masterplaySection = document.getElementById('masterplay');//masterplay bölümüne seçilem şarkıyı eklemek(çalışmadı)
+          masterplaySection.innerHTML = `
+            <img src="${poster}" alt="">
+            <div class="content">
+               ${songName}
+            </div>
+          `;
+     
+      });
+    });
+     
 
 
-  });
+
+
   let input =document.getElementsByTagName('input')[0];
   input.addEventListener('keyup',()=>{
     let input_value=input.value.toUpperCase();
@@ -220,7 +254,9 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
    })
 
 
-  //search data end
+
+
+  //search data end 
 
 
 let masterPlay = document.getElementById('masterPlay');
@@ -256,6 +292,7 @@ const makeAllBackgrounds = () =>{
 let index = 0;
 let poster_master_play = document.getElementById('poster_master_play');
 let title = document.getElementById('title');
+
 Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         index = e.target.id;
@@ -263,15 +300,16 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
         music.src = `audio/${index}.mp3`;
-        poster_master_play.src =`img/${index}.jpeg`;
+        /*poster_master_play.src =`img/${index}.jpeg`;*/
         music.play();
         let song_title = songs.filter((ele)=>{
             return ele.id == index;
         })
 
         song_title.forEach(ele =>{
-            let {songName} = ele;
+            let {songName,poster} = ele;
             title.innerHTML = songName;
+            poster_master_play.src=poster;
         })
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -363,6 +401,7 @@ let back = document.getElementById('back');
 let next = document.getElementById('next');
 
 back.addEventListener('click', ()=>{
+    
     index -= 1;
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
