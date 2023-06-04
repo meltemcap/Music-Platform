@@ -183,7 +183,7 @@ Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
   //search data start //searchbar kısmı
   let search_result=document.getElementsByClassName('search_result')[0];
   //search_result.addEventListener('click',()=>{ //bunu kaldırınca masterplaydeki şarkı durmadan seçtiğim şarkı çalıyo
-    
+
    
 //} )
 
