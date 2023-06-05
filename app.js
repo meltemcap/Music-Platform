@@ -1,4 +1,4 @@
-const music = new Audio('audio/9.mp3');
+const music = new Audio('audio/8.mp3');
 
 // create Array 
 
@@ -7,174 +7,161 @@ const songs = [
         id:'1',
         songName:` NKBİ <br>
         <div class="subtitle">GÜNEŞ</div>`,
-        poster: "img/indir.jpeg",
-    },
-    //{
-       // id:'2',
-        //songName:` FIRTINADAYIM <br>
-       // <div class="subtitle">Mabel Matiz</div>`,
-       // poster: "img/4.jpeg",
-    //},
-    // all object type 
-    {
-        id:"3",
-        songName: `SENİ DERT ETMELER <br><div class="subtitle"> Madrigal</div>`,
-        poster: "img/6.jpeg",
-    },
-    {
-        id:"4",
-        songName: `CANIN SAĞ OLSUN <br><div class="subtitle">Semicenk</div>`,
-        poster: "img/5.jpeg",
-    },
-    {
-        id:"5",
-        songName: `AŞKIN OLAYIM <br><div class="subtitle">Simge</div>`,
         poster: "img/1.jpg",
     },
     {
-        id:"6",
+        id:"2",
+        songName: `SENİ DERT ETMELER <br><div class="subtitle"> Madrigal</div>`,
+        poster: "img/2.jpg",
+    },
+    {
+        id:"3",
+        songName: `CANIN SAĞ OLSUN <br><div class="subtitle">Semicenk</div>`,
+        poster: "img/3.jpg",
+    },
+    {
+        id:"4",
+        songName: `AŞKIN OLAYIM <br><div class="subtitle">Simge</div>`,
+        poster: "img/4.jpg",
+    },
+    {
+        id:"5",
         songName: `YANA YANA <br><div class="subtitle">Semicenk</div>`,
-        poster: "img/semicenk.jpg",
+        poster: "img/5.jpg",
+    },
+    {
+        id:"6",
+        songName: `Koca Yaşlı Şişko Dünya <br><div class="subtitle">Adamlar</div>`,
+        poster: "img/6.jpg",
     },
     {
         id:"7",
-        songName: `Koca Yaşlı Şişko Dünya <br><div class="subtitle">Adamlar</div>`,
-        poster: "img/adamlar.jpeg",
+        songName: ` Tastamam <br><div class="subtitle">Can Bonomo</div>`,
+        poster: "img/7.jpg",
     },
     {
         id:"8",
-        songName: ` Tastamam <br><div class="subtitle">Can Bonomo</div>`,
-        poster: "img/canbonomo.jpg",
+        songName: `Yellow <br><div class="subtitle">Coldplay</div>`,
+        poster: "img/8.jpg",
     },
     {
         id:"9",
-        songName: `Yellow <br><div class="subtitle">Coldplay</div>`,
-        poster: "img/yellow.jpg",
+        songName: `Martılar <br><div class="subtitle">Edis</div>`,
+        poster: "img/9.jpg",
     },
     {
         id:"10",
-        songName: `Martılar <br><div class="subtitle">Edis</div>`,
-        poster: "img/edis.jpeg",
+        songName: `Kor <br><div class="subtitle">Emir Can İğrek</div>`,
+        poster: "img/10.jpg",
     },
     {
         id:"11",
-        songName: `Kor <br><div class="subtitle">Emir Can İğrek</div>`,
-        poster: "img/emircan.jpg",
+        songName: `Fire On Fire <br><div class="subtitle">Sam Smith</div>`,
+        poster: "img/11.jpg",
     },
     {
         id:"12",
-        songName: `Fire On Fire <br><div class="subtitle">Sam Smith</div>`,
-        poster: "img/samsmıth.jpg",
+        songName: `Olur Mu? <br><div class="subtitle">Gazapizm</div>`,
+        poster: "img/12.jpg",
     },
     {
         id:"13",
-        songName: `Olur Mu? <br><div class="subtitle">Gazapizm</div>`,
-        poster: "img/gazapizm.jpg",
+        songName:`A Little Braver <br><div class="subtitle">New Empire</div>`,
+        poster: "img/13.jpg",
     },
     {
         id:"14",
-        songName:`A Little Braver <br><div class="subtitle">New Empire</div>`,
-        poster: "img/newampire.jpg",
+        songName: `Karam <br><div class="subtitle">Hakan Peker</div>`,
+        poster: "img/14.jpg",
     },
     {
         id:"15",
-        songName: `Karam <br><div class="subtitle">Hakan Peker</div>`,
-        poster: "img/hakanpeker.jpg",
+        songName: `Bones <br><Imagine class="subtitle">Imagine Dragons</div>`,
+        poster: "img/15.jpg",
     },
     {
         id:"16",
-        songName: `Bones <br><Imagine class="subtitle">Imagine Dragons</div>`,
-        poster: "img/b.jpg",
+        songName: `Thunder <br><div class="subtitle">Imagine Dragons></div>`,
+        poster: "img/16.jpg",
     },
     {
         id:"17",
-        songName: `Thunder <br><div class="subtitle">Imagine Dragons></div>`,
-        poster: "img/ImagineDragons.jpg",
+        songName: `Car's Outside <br><div class="subtitle">James Arthur</div>`,
+        poster: "img/17.jpg",
     },
     {
         id:"18",
-        songName: `Car's Outside <br><div class="subtitle">James Arthur</div>`,
-        poster: "img/jamesarthur.jpg",
+        songName: `Garezi Var <br><div class="subtitle">Kahraman Deniz</div>`,
+        poster: "img/18.jpg",
     },
     {
         id:"19",
-        songName: `Garezi Var <br><div class="subtitle">Kahraman Deniz</div>`,
-        poster: "img/kahramandeniz.jpg",
+        songName: `Tencere Kapak <br><div class="subtitle">Kenan Doğulu</div>`,
+        poster: "img/19.jpg",
     },
     {
         id:"20",
-        songName: `Tencere Kapak <br><div class="subtitle">Kenan Doğulu</div>`,
-        poster: "img/kenandogulu.jpg",
+        songName: `Before You Go <br><div class="subtitle">Lewis Capaldi</div>`,
+        poster: "img/20.jpg",
     },
     {
         id:"21",
-        songName: `Before You Go <br><div class="subtitle">Lewis Capaldi</div>`,
-        poster: "img/lewis.jpg",
+        songName: `Fırtınadayım <br><div class="subtitle">Mabel Matiz</div>`,
+        poster: "img/21.jpg",
     },
     {
         id:"22",
-        songName: `Fırtınadayım <br><div class="subtitle">Mabel Matiz</div>`,
-        poster: "img/4.jpeg",
-    },
-    {
-        id:"28",
         songName: `Nasır <br><div class="subtitle">Melike Şahin</div>`,
-        poster: "img/melikesahin.jpg",
+        poster: "img/22.jpg",
     },
     {
-        id:"32",
-        songName: `Ki Sen<br><div class="subtitle">Yalın</div>`,
-        poster: "img/yalın.jpg",
+        id:"23",
+        songName: `Tutamıyorum Zamanı <br><div class="subtitle">Müslüm Gürses</div>`,
+        poster: "img/23.jpg",
     },
     {
         id:"24",
-        songName: `Tutamıyorum Zamanı <br><div class="subtitle">Müslüm Gürses</div>`,
-        poster: "img/muslumgurses.jpg",
+        songName: `Son Arzum <br><div class="subtitle">Nilüfer</div>`,
+        poster: "img/24.jpg",
     },
     {
         id:"25",
-        songName: `Son Arzum <br><div class="subtitle">Nilüfer</div>`,
-        poster: "img/nilü.jpg",
+        songName: `Hayır Olamaz <br><div class="subtitle">SeksenDört</div>`,
+        poster: "img/25.jpg",
     },
     {
         id:"26",
-        songName: `Hayır Olamaz <br><div class="subtitle">SeksenDört</div>`,
-        poster: "img/84.jpg",
+        songName: `Dansöz<br><div class="subtitle">Serdar Ortaç</div>`,
+        poster: "img/26.jpg",
     },
     {
         id:"27",
-        songName: `Dansöz<br><div class="subtitle">Serdar Ortaç</div>`,
-        poster: "img/serdarortac.jpg",
+        songName: `Firuze<br><div class="subtitle">Sezen Aksu</div>`,
+        poster: "img/27.jpg",
+    },
+    {
+        id:"28",
+        songName: `Kuzu Kuzu<br><div class="subtitle">Tarkan</div>`,
+        poster: "img/28.jpg",
     },
     {
         id:"29",
-        songName: `Firuze<br><div class="subtitle">Sezen Aksu</div>`,
-        poster: "img/sezenaksu.jpg",
-    },
-    {
-        id:"30",
-        songName: `Kuzu Kuzu<br><div class="subtitle">Tarkan</div>`,
-        poster: "img/tarkan.jpg",
-    },
-    {
-        id:"31",
         songName: `Cumhuriyet<br><div class="subtitle">Yalın</div>`,
-        poster: "img/yalın.jpg",
+        poster: "img/29.jpg",
     },
    
     {
-        id:"33",
+        id:"30",
         songName: `Kumralım<br><div class="subtitle">Yaşar</div>`,
-        poster: "img/yaşar.jpg",
+        poster: "img/30.jpg",
     },
 
 ]
 
 
-//function openWindow(destinationUrl) {
-  //  window.open(destinationUrl, '_blank');
-//}
-
+function openWindow(destinationUrl) {
+    window.open(destinationUrl, '_blank');
+}
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
     element.getElementsByTagName('img')[0].src = songs[i].poster;
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
