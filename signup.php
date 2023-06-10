@@ -69,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
             <div class="right_bx1">
-                <img src="img/no.jpeg" alt="">
+                <img src="img/no.jpg" alt="">
                 <?php
                 if($msg){
                   echo('<h3>'.$msg.'</h3>');

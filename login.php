@@ -59,19 +59,15 @@ if (isset($_POST['user_name'])) {
         </div>
     </div>
     <div class="right_bx1">
-        <img src="img/no.jpeg" alt="">
+        <img src="img/no.jpg" alt="">
         <?php
                 if($msg){
                   echo('<h3>'.$msg.'</h3>');
 
                 }
                 ?>
-
-
-
-
-        <h3>Incorrect Password</h3>
     </div>
+              </div>
     </header>
       
   </body>
